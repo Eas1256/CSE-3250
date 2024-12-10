@@ -1,0 +1,13 @@
+{
+    "name": "Clockchain Development",
+    "dockerFile": "Dockerfile",
+    "postCreateCommand": "pip install paho-mqtt",
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+    ],
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ]
+}
+
